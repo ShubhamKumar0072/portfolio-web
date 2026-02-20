@@ -1,0 +1,51 @@
+* {
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+:root{
+  --bg: #F0FDFD;
+  --surface: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --border: #D1EAEA;
+  --accent: #FF6B6B;
+  --accent-soft: #FFE5E5;
+}
+
+[data-theme="dark"]{
+  --bg: #0D1B1E;
+  --surface: #112A2E;
+  --text-primary: #E6FFFA;
+  --text-secondary: #9FB3B6;
+  --border: #1F3A3F;
+  --accent: #FF8787;
+  --accent-soft: #3A1E22;
+}
+
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+h1,h2{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  letter-spacing: -1px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}

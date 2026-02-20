@@ -1,0 +1,108 @@
+.Home {
+    height: 100vh;
+    background:
+        radial-gradient(circle at 20% 30%, var(--accent-soft), transparent 40%),
+        radial-gradient(circle at 80% 20%, var(--accent-soft), transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(255, 107, 107, 0.08), transparent 40%),
+        var(--bg);
+    color: var(--text-primary);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Home>img {
+    width: 600px;
+    ;
+}
+
+.home-tital {
+    width: 40%;
+}
+
+.home-tital>h3 {
+    /* Hii I am*/
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+
+.home-tital>h2 {
+    /*  WEB DEVLOPER */
+    margin: 0;
+    color: var(--accent);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+.home-tital>h2 .type {
+    border-right: 2px solid var(--accent);
+    animation: blink 0.8s infinite;
+    display: inline-block;
+    min-width: 1ch;
+    white-space: nowrap;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+.home-tital>h1 {
+    /* Shubham Kumar */
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--text-primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-tital>p {
+    color: var(--text-secondary);
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.home-tital>div {
+    margin: 1rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--accent-soft);
+}

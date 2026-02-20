@@ -1,0 +1,55 @@
+.Navbar{
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    height: 2.3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+.Navbar>p{
+    color: var(--accent);
+    font-weight: 500;
+
+}
+.nav-link{
+    display: flex;
+    gap: 0.6rem;
+}
+.nav-link a{
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+
+.nav-link a:hover{
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.nav-link a.active{
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.theme-toggle {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--accent-soft);
+}
