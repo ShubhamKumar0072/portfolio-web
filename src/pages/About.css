@@ -1,0 +1,48 @@
+.About {
+    background:
+        radial-gradient(circle at 20% 30%, var(--accent-soft), transparent 40%),
+        radial-gradient(circle at 80% 20%, var(--accent-soft), transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(255, 107, 107, 0.08), transparent 40%),
+        var(--bg);
+    color: var(--text-primary);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-intro{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.about-into-text > h1{
+    margin-top: 5px;
+}
+
+.profile > img{
+    aspect-ratio: initial;
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.exp-edu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    
+}
+.exp-edu>div{
+    margin: 1rem;
+}
+
+.exp-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
