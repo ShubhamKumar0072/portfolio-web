@@ -1,0 +1,17 @@
+.Projects{
+    background-color: var(--bg);
+    margin: 1rem;
+}
+.pro-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pro-games{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
