@@ -1,6 +1,6 @@
 .ProCard{
     border-radius: 22px;
-    width: 550px;
+    width: 500px;
     display: flex;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -29,6 +29,7 @@
 .pro-info-text{
     background-color: var(--accent-soft);
     padding: 10px;
+    padding-top: 20px;
     border-top-right-radius: 22px;
     border-bottom-right-radius: 22px;
 }

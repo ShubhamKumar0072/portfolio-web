@@ -1,17 +1,83 @@
 .Projects{
-    background-color: var(--bg);
-    margin: 1rem;
-}
-.pro-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  min-height: 100vh;
+  padding: 1rem;
+  background:
+    radial-gradient(circle at 10% 10%, var(--accent-soft), transparent 25%),
+    radial-gradient(circle at 80% 80%, var(--accent-soft), transparent 25%),
+    
+    var(--bg);
+  color: var(--text-primary);
 }
 
+/* Keep content centered and clean */
+.Projects > h1,
+.Projects > hr,
+.pro-main,
 .pro-games{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Projects > h1{
+  margin: 0 0 1.2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  color: var(--text-primary);
+}
+
+/* Main project cards layout */
+.pro-main{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Divider */
+.Projects > hr{
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 107, 107, 0.35),
+    transparent
+  );
+  margin: 2.2rem auto;
+}
+
+/* Games grid */
+.pro-games{
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1100px){
+  .pro-games{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px){
+  .Projects{
+    padding: 2.5rem 1rem;
+  }
+
+  .Projects > h1{
+    font-size: 1.7rem;
+  }
+
+  .pro-games{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px){
+  .pro-games{
+    grid-template-columns: 1fr;
+  }
 }

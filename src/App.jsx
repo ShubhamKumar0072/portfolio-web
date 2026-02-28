@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Home from './pages/home'
 import About from './pages/About'
 import Projects from './pages/Projects'
+import Project from './pages/Project';
 function App() {
 
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/projects' element={<Projects/>}/>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/project' element={<Project/>}/>
       </Routes>
 
     </BrowserRouter>
