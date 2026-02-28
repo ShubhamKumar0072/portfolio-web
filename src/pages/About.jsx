@@ -3,6 +3,7 @@ import profile from "./../assets/profile2.jpg"
 import Skills from "../sections/skills"
 import ExpCard from "../cards/ExpCard"
 import EducationCard from "../cards/EducationCard"
+import exp from "../data/exp"
 export default function About() {
     return (
         <div className="About">
@@ -13,20 +14,20 @@ export default function About() {
 
                 <div className="about-into-text">
                     <h1>About Me </h1>
-                    <p>&Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique possimus magni doloremque nam dolore culpa consectetur commodi harum porro delectus blanditiis, ipsum aperiam ex magnam necessitatibus cumque neque voluptates tenetur excepturi ab? Excepturi beatae placeat, eligendi earum ipsum at, fuga libero inventore id consectetur nihil quasi omnis, consequatur quidem quas minus. Deserunt officia quia qui sint neque, iure animi et consectetur saepe assumenda exercitationem illo obcaecati nisi corrupti beatae, nostrum corporis repellendus! Eveniet, nihil! Incidunt perferendis consequatur laboriosam sapiente doloribus necessitatibus, quod commodi voluptas ratione porro, iste hic aut dolorum quasi neque eligendi architecto facere eaque? Ullam, pariatur. Iusto, laudantium?</p>
+                    <p>
+                        I am a Computer Science student at KIIT University with a strong interest in competitive programming and full stack web development. I enjoy solving complex problems and turning ideas into real-world applications. Over time, I have solved 600+ problems on LeetCode, which has helped me improve my logical thinking, problem-solving speed, and understanding of data structures and algorithms. I believe consistency and practice are the keys to becoming a better programmer.
+                        Apart from coding, I like building clean and responsive web applications using the MERN stack. I focus on writing organized code and creating user-friendly interfaces. I also have experience working in teams through college societies and technical groups, which improved my communication and collaboration skills. I am always eager to learn new technologies, take on challenges, and grow both technically and personally.
+                    </p>                    
                     <Skills />
                 </div>
             </div>
-
             <div className="exp-edu">
                 <div className="exp">
                     <h2>My Experiances</h2>
                     <div className="exp-cards">
-                        <ExpCard 
-                            company="Coding Ninja Socity, KIIT"
-                            position="Competitive Programer"
-                        />
-                        <ExpCard /><ExpCard />
+                        {exp.map((data, id) => (
+                            <ExpCard key={id} data={data} />
+                        ))}
                     </div>
                 </div>
                 <div className="edu">
@@ -35,17 +36,25 @@ export default function About() {
                         <EducationCard
                             period="2023 — 2027"
                             institute="KIIT University"
-                            degree="B.Tech in Computer Science"
+                            degree="B.Tech in Computer Science Engineering"
+                            location="Bhubaneswar, India"
+                            note="CGPA: 9.33"
                         />
+
                         <EducationCard
-                            period="2023 — 2027"
-                            institute="KIIT University"
-                            degree="B.Tech in Computer Science"
+                            period="2020 — 2022"
+                            institute="Delhi Public School, Bokaro"
+                            degree="Class XII (CBSE)"
+                            location="Bokaro, Jharkhand, India"
+                            note="Percentage: 91.0%"
                         />
+
                         <EducationCard
-                            period="2023 — 2027"
-                            institute="KIIT University"
-                            degree="B.Tech in Computer Science"
+                            period="2018 — 2020"
+                            institute="Dayanand Anglo Vedic Public School, Bokaro"
+                            degree="Class X (CBSE)"
+                            location="Bokaro, Jharkhand, India"
+                            note="Percentage: 90.0%"
                         />
                     </div>
                 </div>

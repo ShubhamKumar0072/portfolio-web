@@ -50,7 +50,9 @@ export default function Home() {
                 <h3>Hi, I am </h3>
                 <h1>Shubham Kumar</h1>
                 <h2><span className="type">{text}</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsam repellendus dolorum dolorem harum suscipit qui minus optio corrupti veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate neque placeat odio modi sapiente magni quia officiis ut aut voluptas.</p>
+                <p>
+                    Hi, I’m Shubham — a Computer Science student and competitive programmer. I’ve solved 600+ problems on LeetCode and love building clean, modern web applications. I enjoy turning ideas into real projects and constantly improving my skills.
+                </p>
                 <div>
                     <button className="btn-primary">Downlode Resume</button>
                     <button className="btn-secondary">Contact me</button>

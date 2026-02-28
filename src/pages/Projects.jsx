@@ -3,6 +3,7 @@ import game1 from "./../assets/pro1.svg"
 import ProCard from "../cards/ProCard";
 import GameCard from "../cards/GameCard";
 import projects from "../data/projects";
+import games from "../data/games";
 export default function Projects() {
     return (
         <div className="Projects">
@@ -15,22 +16,9 @@ export default function Projects() {
             <hr />
             <h1>Just Some Games</h1>
             <div className="pro-games">
-                <GameCard
-                    image={game1}
-                    title="Tic Tac Toe"
-                    desc="Play vs friend with clean UI and win detection."
-                    tech={["HTML", "CSS", "JS"]}
-                    github="https://github.com/..."
-                    live="https://your-site..."
-                />
-                <GameCard
-                    image={game1}
-                    title="Tic Tac Toe"
-                    desc="Play vs friend with clean UI and win detection."
-                    tech={["HTML", "CSS", "JS"]}
-                    github="https://github.com/..."
-                    live="https://your-site..."
-                />
+                {games.map((game)=>(
+                    <GameCard key={game.id} data={game}/>
+                ))}
             </div>
         </div>
     )

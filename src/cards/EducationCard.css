@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   gap: 14px;
-
+  min-width: 500px;
   padding: 16px 18px;
   border-radius: 18px;
 

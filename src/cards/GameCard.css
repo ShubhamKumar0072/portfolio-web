@@ -1,5 +1,5 @@
 .GameCard{
-  width: 260px;
+  width: 300px;
   border-radius: 18px;
   overflow: hidden;
 
@@ -8,6 +8,13 @@
 
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+
+  padding-bottom: 8px;
+}
+
+.GameCard + .GameCard{
+  margin-left: 24px;
 }
 
 .GameCard:hover{
@@ -20,7 +27,7 @@
 /* Image */
 .game-thumb{
   background: var(--accent-soft);
-  height: 150px;
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,58 +41,61 @@
 
 /* Body */
 .game-body{
-  padding: 14px 14px 16px;
+  padding: 22px 22px 24px; 
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .game-top{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 10px;
+  gap: 14px; 
 }
 
 .game-title{
   margin: 0;
   color: var(--text-primary);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.6;
 }
 
-/* One-line description */
+/* Description */
 .game-desc{
-  margin: 8px 0 10px;
+  margin: 0;
   color: var(--text-secondary);
-  font-size: 0.88rem;
-  line-height: 1.45;
+  font-size: 0.9rem;
+  line-height: 1.6; 
 }
 
 /* Tech pills */
 .game-tech{
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px; 
 }
 
 .tech-pill{
   background: rgba(255, 107, 107, 0.10);
   color: var(--accent);
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 999px;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
 }
 
-/* Links (icons) */
+/* Links */
 .game-links{
   display: flex;
-  gap: 8px;
+  gap: 10px;
 }
 
 .game-icon{
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
+  width: 36px;
+  height: 36px; 
+  border-radius: 12px;
 
   display: flex;
   align-items: center;
@@ -102,14 +112,4 @@
   transform: translateY(-2px);
   background: var(--accent);
   color: white;
-}
-
-/* Dark mode pop */
-[data-theme="dark"] .GameCard{
-  border: 1px solid rgba(255, 135, 135, 0.22);
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.30);
-}
-
-[data-theme="dark"] .tech-pill{
-  background: rgba(255, 135, 135, 0.18);
 }
