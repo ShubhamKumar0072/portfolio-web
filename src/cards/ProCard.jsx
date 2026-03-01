@@ -1,6 +1,5 @@
 import "./ProCard.css";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-import pro1 from "./../assets/pro1.svg"
 import { useNavigate } from "react-router-dom";
 
 
@@ -14,7 +13,6 @@ export default function ProCard({data}) {
         navigate("/project",{
             state: {data}
         });
-        console.log("Go to the required page");
     };
 
 

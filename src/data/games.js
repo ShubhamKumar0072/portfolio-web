@@ -1,5 +1,5 @@
-import snakeImg from "../assets/pro1.svg";
-import mineImg from "../assets/pro1.svg";
+import snakeImg from "../assets/snake.png";
+import mineImg from "../assets/mine.png";
 
 const games = [
   {
@@ -7,8 +7,8 @@ const games = [
     title: "Snake Master",
     desc: "A fully responsive snake game built from scratch with smooth gameplay, dynamic snake growth logic, and engaging UI animations.",
     tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/shubhamkumar/snake-master",
-    live: "https://snake-master-demo.vercel.app",
+    github: "https://github.com/ShubhamKumar0072/snake_master",
+    live: "https://shubhamkumar0072.github.io/snake_master/",
   },
 
   {
@@ -16,8 +16,8 @@ const games = [
     title: "Minesweeper",
     desc: "A classic Minesweeper puzzle game developed with clean game logic, responsive design, and complete win/lose mechanics.",
     tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/shubhamkumar/minesweeper-game",
-    live: "https://minesweeper-demo.vercel.app",
+    github: "https://github.com/ShubhamKumar0072/minesweeper_game",
+    live: "https://shubhamkumar0072.github.io/minesweeper_game/",
   }
 ];
 

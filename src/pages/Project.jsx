@@ -30,13 +30,13 @@ export default function Project() {
     return (
         <div className="Project">
             <div className="proj-top">
-                <div className="proj-top-img">
-                    <img src={data.image} alt={`${data.name} preview`} />
+                <div className="proj-top-img enter fade-scale-up d-1">
+                    <img className="enter fade-scale-up d-2" src={data.image} alt={`${data.name} preview`} />
                 </div>
 
-                <div className="proj-top-desc">
+                <div className="proj-top-desc enter zoom-in d-1">
                     <div className="proj-title-row">
-                        <h1 className="proj-title">{data.name}</h1>
+                        <h1 className="proj-title enter float-in d-2">{data.name}</h1>
                         <button className="proj-back-btn" onClick={() => navigate(-1)} aria-label="Go back">
                             <ArrowBackIcon fontSize="small" />
                         </button>
@@ -46,7 +46,7 @@ export default function Project() {
 
                     <div className="proj-tech">
                         {techUsed.map((tech) => (
-                            <span key={tech} className="tech-pill">
+                            <span key={tech} className="tech-pill enter pop d-2">
                                 {tech}
                             </span>
                         ))}
@@ -54,7 +54,7 @@ export default function Project() {
                 </div>
             </div>
 
-            <div className="proj-bottom">
+            <div className="proj-bottom enter swing-in d-1">
                 <h3>Features</h3>
 
                 <ul className="proj-features">

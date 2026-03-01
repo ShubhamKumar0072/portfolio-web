@@ -3,7 +3,6 @@ import "./ExpCard.css";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export default function ExpCard({ data }) {
-    console.log(data);
     const [showDet, setShowDet] = useState(false);
 
     return (

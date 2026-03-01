@@ -1,4 +1,4 @@
-import img1 from "../assets/pro1.svg";
+import img1 from "../assets/travel-up.png";
 
 const projects = [
   {
@@ -20,7 +20,7 @@ and login. The project demonstrates REST API integration, full stack
 development, database management, and modern UI design.
     `,
 
-    githubLink: "https://github.com/shubhamkumar/travel-up",
+    githubLink: "https://github.com/ShubhamKumar0072/travel_up.git",
     liveLink: "https://travelup-demo.vercel.app",
 
     features: [
