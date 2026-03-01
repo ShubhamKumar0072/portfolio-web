@@ -1,13 +1,15 @@
-.Skills{
+.Skills {
     padding: 2rem;
-    padding-top: 1rem ;
+    padding-top: 1rem;
 }
-.skill{
+
+.skill {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1rem;
 }
+
 .skill div {
     background: var(--accent-soft);
     color: var(--accent);
@@ -18,10 +20,44 @@
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(255, 107, 107, 0.15);
 }
+
 .skill div:hover {
     background: var(--accent-soft);
     color: var(--accent);
     border-color: var(--accent);
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(255, 107, 107, 0.25);
+}
+
+/* Responsivness */
+
+/* 💻 Tablet / Small laptop */
+@media (max-width: 1024px) {}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+    .Skills {
+        padding: 1.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .skill {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill div {
+        padding: 7px 14px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+/* 📱 Small Mobile (optional fine tuning) */
+@media (max-width: 480px) {
+    .skill div {
+        padding: 5px 10px;
+        font-weight: 400;
+        font-size: 12px;
+    }
 }

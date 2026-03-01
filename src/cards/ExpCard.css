@@ -137,6 +137,7 @@
 }
 
 .exp-list > li{
+  font-family: 'Inter', sans-serif;
   line-height: 1.23;
   margin-bottom:5px ;
 }
@@ -145,4 +146,12 @@
   max-height: 600px; /* large enough */
   opacity: 1;
   transform: translateY(0);
+}
+
+
+@media (max-width: 480px) {
+    .exp-list > li{
+      line-height: 1.2;
+      font-size: 14px;
+    }
 }
