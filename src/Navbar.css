@@ -1,4 +1,5 @@
 .Navbar{
+  position: relative;
     background: var(--surface);
     border-bottom: 1px solid var(--border);
     height: 2.3rem;
@@ -52,4 +53,46 @@
 
 .theme-toggle:hover {
   background: var(--accent-soft);
+}
+
+
+/* For Collapsable Navbar */
+
+.menue{
+  display:none;
+  background: transparent;
+  border: none;
+  cursor:pointer;
+  color: var(--text-primary);
+}
+
+/* for mobile view */
+@media(max-width:768px){
+  .menue{
+    display: block;
+  }
+
+.nav-link{
+  position: absolute;
+  top: 2.3rem;
+  left: 0;
+
+  width: 100%;
+  padding: 20px;
+
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  /* Hidden state (move up) */
+  transform: translateY(-150%);
+  transition: transform 0.3s ease;
+}
+
+.nav-link.active1{
+  transform: translateY(0);
+}
 }
