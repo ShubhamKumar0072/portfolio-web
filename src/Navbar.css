@@ -1,41 +1,44 @@
-.Navbar{
+.Navbar {
   position: relative;
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    height: 2.3rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;
-}
-.Navbar>p{
-    color: var(--accent);
-    font-weight: 500;
-
-}
-.nav-link{
-    display: flex;
-    gap: 0.6rem;
-}
-.nav-link a{
-    padding: 4px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: var(--text-secondary);
-    transition: all 0.3s ease;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  height: 2.3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
 }
 
+.Navbar>p {
+  color: var(--accent);
+  font-weight: 500;
 
-.nav-link a:hover{
+}
+
+.nav-link {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.nav-link a {
+  padding: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+
+.nav-link a:hover {
   background: var(--accent-soft);
   color: var(--accent);
 }
 
-.nav-link a.active{
+.nav-link a.active {
   background: var(--accent-soft);
   color: var(--accent);
   font-weight: 600;
@@ -58,41 +61,47 @@
 
 /* For Collapsable Navbar */
 
-.menue{
-  display:none;
+.menue {
+  display: none;
   background: transparent;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
   color: var(--text-primary);
 }
 
 /* for mobile view */
-@media(max-width:768px){
-  .menue{
+@media(max-width:768px) {
+  .menue {
     display: block;
   }
 
-.nav-link{
-  position: absolute;
-  top: 2.3rem;
-  left: 0;
+  .nav-link {
+    position: absolute;
+    top: 2.3rem;
+    left: 0;
 
-  width: 90%;
-  padding: 20px;
+    width: 85%;
+    padding: 20px;
 
-  background: var(--surface);
-  border-top: 1px solid var(--border);
+    background: var(--surface);
+    border-top: 1px solid var(--border);
 
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
-  /* Hidden state (move up) */
-  transform: translateY(-150%);
-  transition: transform 0.3s ease;
+    /* Hidden state (move up) */
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-link.active1 {
+    transform: translateY(0);
+  }
 }
 
-.nav-link.active1{
-  transform: translateY(0);
-}
+@media(max-width: 480px){
+  .Navbar>p{
+    font-size: 14px;
+  }
 }

@@ -13,10 +13,6 @@
   padding-bottom: 8px;
 }
 
-.GameCard + .GameCard{
-  margin-left: 24px;
-}
-
 .GameCard:hover{
   transform: translateY(-6px);
   box-shadow:

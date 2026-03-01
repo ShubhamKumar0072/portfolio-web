@@ -197,3 +197,30 @@
   box-shadow: 0 14px 30px rgba(255, 107, 107, 0.35);
 }
 
+
+@media (max-width: 768px) { 
+  .proj-top{
+    flex-direction: column-reverse;
+  }
+  .proj-top-desc{
+    width: 95%;
+  }
+  .proj-top-img{
+    width: 100%;
+  }
+}
+
+@media (max-width:480px){
+  .proj-title{
+    font-size: 1.95rem;
+  }
+  .proj-longdesc{
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .proj-features > li{
+    font-size: 14px;
+    line-height: 1.5;
+}
+}
+
