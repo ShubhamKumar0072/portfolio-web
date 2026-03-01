@@ -105,3 +105,68 @@
 .btn-secondary:hover {
     background: var(--accent-soft);
 }
+
+/* Adding Responsivness  */
+
+/* 💻 Tablet / Small laptop */
+@media (max-width: 1024px) {
+    .Home > img {
+        width: 350px;
+    }
+    .home-tital> h3 {
+        font-size: 1rem;
+    }
+    .home-tital>h2 {
+        font-size: 1.3rem;
+    }
+    .home-tital>h1 {
+        font-size: 2.2rem;
+    }
+    .home-tital >p {
+        line-height: 1.3;
+    }
+    .btn-primary,.btn-secondary {
+        font-size: 13px;
+        padding: 8px 13px;
+    }
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+    .Home {
+        flex-direction: column;
+    }
+    .home-tital {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+    .home-tital>p {
+        margin: 1rem;
+        max-width: 100%;
+    }
+    .home-tital>div {
+        justify-content: center;
+    }
+}
+
+/* 📱 Small Mobile (optional fine tuning) – placed last so it can override */
+@media (max-width: 480px) {
+    .home-tital>h1 {
+        font-size: 1.8rem;
+    }
+    .home-tital>h2{
+        font-size: 1.05rem;
+    }
+    .home-tital>h3{
+        font-size: 0.85rem;
+    }
+    .home-tital>p{
+        line-height: 1.2;
+        font-size: 0.9rem;
+    }
+    .btn-primary,.btn-secondary {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+}
