@@ -122,13 +122,7 @@
     .home-tital>h1 {
         font-size: 2.2rem;
     }
-    .home-tital >p {
-        line-height: 1.3;
-    }
-    .btn-primary,.btn-secondary {
-        font-size: 13px;
-        padding: 8px 13px;
-    }
+    
 }
 
 /* 📱 Mobile */
@@ -148,25 +142,12 @@
     .home-tital>div {
         justify-content: center;
     }
-}
-
-/* 📱 Small Mobile (optional fine tuning) – placed last so it can override */
-@media (max-width: 480px) {
-    .home-tital>h1 {
-        font-size: 1.8rem;
+    .home-tital>h1{
+        margin-bottom: 0.5rem;
+        margin-top: 0.3rem;
     }
     .home-tital>h2{
-        font-size: 1.05rem;
-    }
-    .home-tital>h3{
-        font-size: 0.85rem;
-    }
-    .home-tital>p{
-        line-height: 1.2;
-        font-size: 0.9rem;
-    }
-    .btn-primary,.btn-secondary {
-        font-size: 13px;
-        padding: 5px 10px;
+        font-size: 1.1rem;
+        font-weight: 800;
     }
 }

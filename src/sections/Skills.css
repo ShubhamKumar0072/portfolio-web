@@ -40,24 +40,9 @@
         padding: 1.5rem;
         padding-top: 0.5rem;
     }
-
-    .skill {
-        gap: 1rem;
-        margin-bottom: 1rem;
-    }
-
     .skill div {
-        padding: 7px 14px;
-        font-weight: 400;
-        font-size: 12px;
-    }
-}
-
-/* 📱 Small Mobile (optional fine tuning) */
-@media (max-width: 480px) {
-    .skill div {
-        padding: 5px 10px;
-        font-weight: 400;
-        font-size: 12px;
+        padding: 8px 16px;
+        font-weight: 600;
+        font-size: 14px;
     }
 }
