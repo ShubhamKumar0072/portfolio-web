@@ -33,7 +33,7 @@ const exp = [
     skills: ["Data Structures", "Algorithms", "Consistency", "Analytical Thinking"],
     position: "Active Competitive Programmer",
     features: [
-      "Solved 600+ Data Structures and Algorithms problems on LeetCode.",
+      "Solved 400+ Data Structures and Algorithms problems on LeetCode.",
       "Strengthened understanding of arrays, recursion, trees, graphs, DP, and greedy algorithms.",
       "Maintained consistent coding practice to improve logical reasoning skills.",
       "Achieved a global ranking of 250,408 on LeetCode platform."

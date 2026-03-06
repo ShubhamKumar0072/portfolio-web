@@ -58,7 +58,7 @@ export default function Home() {
                 <h1 className="enter fade-left d-1">Shubham Kumar</h1>
                 <h2><span className="type">{text}</span></h2>
                 <p className="enter zoom-in d-2">
-                    Hi, I’m Shubham — a Computer Science student and competitive programmer. I’ve solved 600+ problems on LeetCode and love building clean, modern web applications. I enjoy turning ideas into real projects and constantly improving my skills.
+                    Hi, I’m Shubham — a Computer Science student and competitive programmer. I’ve solved 400+ problems on LeetCode and love building clean, modern web applications. I enjoy turning ideas into real projects and constantly improving my skills.
                 </p>
                 <div>
                     <a href="/resume.pdf" download="Shubham_Kumar_Resume.pdf">
